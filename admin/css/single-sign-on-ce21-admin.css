@@ -1,0 +1,240 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.membership_plans_list {
+    width: 50%;
+}
+.member-synchronize-ce21{
+	width: 50%;
+}
+.member-palan-listing-title-ce21{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.toplevel_page_single_sign_on_ce21 img{
+	padding-top: 7px !important;
+}
+.membership_plans_list_checkbox{
+	/*background-color:#363b3f;color:#fff;padding:25px;*/
+	display: block;
+	float: left;
+	height: 100%;
+	margin-bottom: 20px;
+}
+.membership_plans_list_checkbox label{
+	margin-top:4px;margin-bottom:0;padding-left:4px;
+}
+.membership_plans_list_checkbox #send_error_log{
+ 	float:right;
+}
+.be_group.checked::before {
+	content: "\f147";
+	margin: -3px 0 0 -4px;
+	color: #1e8cbe;
+	font: normal 21px/1 dashicons;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+}
+.ce21-ss-alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.ce21-ss-alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+.ce21-ss-alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+.ce21-ss-admin-loader{
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 999999;
+}
+/* The Modal (background) */
+.ce21-ss-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.ce21-ss-modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+/* The Close Button */
+.ce21-ss-close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.ce21-ss-close:hover,
+.ce21-ss-close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+.ce21-ss-modal-header {
+	padding: 15px 16px;
+	background-color: #23282D;
+	color: white;
+}
+.ce21-ss-modal-header h2{
+	color: white;
+	margin:0;
+}
+.ce21-ss-modal-body {padding: 2px 16px;}
+.ce21-ss-modal-footer {
+	padding: 15px 16px;
+	background-color: #23282D;
+	color: white;
+}
+.ce21-ss-modal-footer p {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding: 0;
+}
+.ce21-ss-notice{
+	border-left-color: #46b450 !important;
+	margin: 5px 0 15px;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	padding: 1px 12px;
+}
+.table-responsive.ce21-ss-custom-table-responsive{
+	overflow-x: inherit;
+}
+.margin-top-15{
+	margin-top:15px;
+}
+.margin-top-10{
+	margin-top:10px;
+}
+@media(max-width:1367px )
+{
+	.table-responsive.ce21-ss-custom-table-responsive{
+		overflow-x: auto;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.ce21-ss-modal-content {
+		position: relative;
+		background-color: #fefefe;
+		margin: auto;
+		padding: 0;
+		border: 1px solid #888;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		-webkit-animation-name: animatetop;
+		-webkit-animation-duration: 0.4s;
+		animation-name: animatetop;
+		animation-duration: 0.4s
+	}
+}
+
+.membership_plans_list .accordion-item{
+	border-color: #ddd !important; 
+	margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.membership_plans_list .accordion-item .member-palan-listing-title-ce21{
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.membership_plans_list .accordion-body{
+    border-top-color: #ddd !important;
+}
+
+.membership_plans_list .accordion-button{
+padding: 0 !important;
+background-color: transparent !important;
+text-decoration: none;
+position: relative;
+padding-left: 18px !important;
+cursor: pointer;
+}
+
+.membership_plans_list .accordion-button:hover{
+	background-color: transparent !important;
+	color: #212529 !important;
+	}
+
+.membership_plans_list .accordion-button:not(.collapsed)::after{
+	content: "-";
+	background-image: none !important;
+	transform: translateY(-50%);
+}
+
+.membership_plans_list .accordion-button::after{
+	content: "+";
+	background-image: none !important;
+	position: absolute;
+	left: 0;
+	font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 17px;
+}
+
+.membership_plans_list .accordion-button:not(.collapsed){
+	color: #212529 !important;
+}
+.custom_group_listing label {
+    display: block !important;
+}
